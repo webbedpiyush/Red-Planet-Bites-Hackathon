@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Reservation Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/About/reservation.css">
+        <script src="./reservation.js" type="module" defer></script>
+    </head>
+    <body>
+        
+        <section class = "banner">
+            <h1>BOOK YOUR TABLE NOW</h1>
+            <div class = "card-container">
+                <div class = "card-img">
+                    <img src="../component/card.png"  alt="">
+                </div>
+
+                <div class = "card-content">
+                    <h3>Reservation</h3>
+                    <form>
+                        <div class = "form-row">
+                            
+                            <input type="date" id="Day" required>
+
+                            <input type="time" id="Time" required>
+                        
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "text" placeholder="Full Name" id="fullname" required>
+                            <input type = "text" placeholder="Phone Number" id="phonenum" required>
+                        </div>
+
+                        <div class = "form-row">
+                            <input type = "number" placeholder="How Many Persons?" min = "1" id="nop" required>
+                            <input type = "submit" value = "BOOK TABLE" id="submit" required>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+    </body>
+</html>
